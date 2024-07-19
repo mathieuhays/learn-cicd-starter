@@ -22,5 +22,5 @@ func GetAPIKey(headers http.Header) (string, error) {
 		return "", ErrMalformedHeader
 	}
 
-	return splitAuth[1], ErrMalformedHeader
+	return splitAuth[1], nil
 }
