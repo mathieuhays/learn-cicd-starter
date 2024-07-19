@@ -19,5 +19,5 @@ jobs:
         with:
           go-version: '1.22'
 
-      - name: Force Failure
-        run: (exit 1)
+      - name: Version
+        run: go version
